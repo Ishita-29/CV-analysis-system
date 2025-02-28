@@ -38,7 +38,8 @@ cv-analysis-system/
 ├── app/
 │   ├── main.py                  # Main Streamlit application
 │   ├── document_processor.py    # Document handling and OCR
-│   ├── cv_parser.py             # Structured CV information extraction
+│   ├── cv_parser.py
+│   ├── data_exporter.py            
 │   ├── llm_service.py           # LLM API integration
 │   ├── chatbot.py               # Chatbot query processing
 │   ├── improved_cv_viewer.py    # Enhanced CV visualization
@@ -96,11 +97,13 @@ cv-analysis-system/
 
 2. Navigate to `http://localhost:8501` in your browser
 
-3. The application has four main sections:
+3. The application has five main sections:
    - **Dashboard**: View statistics about processed CVs
    - **Upload CV**: Upload and process new CV documents
    - **View CVs**: Browse and examine parsed CV information
    - **Chat with CVs**: Query the CV data with natural language
+   - **Export Data**: User can download the summary of the analysis in excel format.
+
 
 4. To process a CV:
    - Go to the "Upload CV" section
